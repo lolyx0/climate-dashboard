@@ -1,0 +1,25 @@
+.glow-on-hover {
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  }
+  
+  .glow-on-hover:hover {
+    color: #000000;
+    text-shadow: 0 0 10px #ffee32, 0 0 20px #ffee32, 0 0 30px #ffee32, 0 0 40px #ffee32;
+  }
+ 
+
+
+ 
+.cloud-icon {
+  color: #ffcc00;
+  padding-right: 30px;
+  font-size: 2.5rem; 
+
+  @media (max-width: 768px) {
+    font-size: 2rem; 
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem; 
+  }
+}

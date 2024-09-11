@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./Header";
+import HistoricalData from "./HistoricalData";
+import CurrentWeather from "./CurrentWeather";
+import WeatherMap from "./WeatherMap";
+import AirPollution from "./AirPollution";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<CurrentWeather />} />
+        <Route path="/Current weather" element={<CurrentWeather />} />
+        <Route path="/Historical data" element={<HistoricalData />} />
+        <Route path="/Weather map" element={<WeatherMap />} />
+        <Route path="/Air pollution" element={<AirPollution />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

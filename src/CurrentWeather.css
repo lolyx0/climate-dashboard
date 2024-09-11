@@ -1,0 +1,76 @@
+
+.image-card {
+    background-color: #202020;
+    padding: 0;
+    color: white;
+    border-radius: 22px;
+    position: relative;
+    max-width: 100%;
+    width: 370px;
+    height: 230px;
+    margin-left: 0px;
+    margin-right: 80px;
+   
+   
+    
+  }
+  
+  .image-card img {
+    width: 370px;
+    height: 230px;
+    border-radius: 22px;
+    max-width: 450px;
+    
+
+    
+  }
+  
+  .image-card .city-name {
+    position: absolute;
+    top: 80px;
+    left: 70%;
+    transform: translateX(-50%);
+    color: #333533;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  
+  @media (max-width: 1200px) {
+    .image-card {
+      margin-left: 20px;
+      margin-right: 20px;
+      
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-card {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .image-card .city-name {
+      top: 80px;
+      font-size: 1vw;
+      
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-card {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  
+    .image-card .city-name {
+      top: 60px;
+     
+      font-size: 3rem;
+    }
+  }
+  
